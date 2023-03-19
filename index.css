@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin: 50px 10px 0px 10px;
+    text-align: center;
+    color: red;
+    /* text-shadow: 2px 2px red; */
+    
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+body{
+    background-color: #aba1a1;
+    background: url(sky.jpg);
+}
+.container{
+
+background-color: whitesmoke;
+height: 30em;
+width: 25em;
+position: absolute;
+transform: translate(-50%,-50%);
+top: 50%;
+left: 50%;
+border-radius: 0.9em;
+box-shadow: 5px,50px black;
+
+}
+
+.buttonContainer{
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    border-bottom: solid black 2px;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0%;
+    padding: 0 1em;
+    align-items: center;
+}
+.buttonContainer > button{
+    font-size: 0.9em;
+    gap: 0.5em;
+    padding: 0.8em 1em;
+    border-radius: 2em;
+    border: none;
+    background-color: gold;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:darkmagenta;
+    /* font-weight: bold; */
+    /* text-shadow: 5px darkblue; */
+}
+.buttonContainer > button:hover{
+    background-color: blue;
+}
+.emojiContainer{
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    /* border: 1px solid black; */
+
+}
+.emoji{
+    /* transition: all 1s; */
+    transition: all 1s;
+    border: 2px solid black;
+    background-color: yellow;
+    height: 14.37em;
+    border-radius: 50%;
+    position: relative;
+    top: 14%;
+left: 42.5%;
+    width: 14.37em;
+}
+.eyebrows,.eyes,.mouth{
+    
+    position: relative;
+top: 22%;
+left: 19%;
+
+}
+.eye{
+    transition: all 1s;
+}
+
+@media screen and (max-width:640px) {
+    
+
+    .emoji{
+
+
+        position: relative;
+top: 22%;
+left: 33%;
+
+    }
+}
+
+@media screen and (max-width:360px) {
+    
+
+    .emoji{
+
+
+        position: relative;
+top: 22%;
+left: 19%;
+
+    }
+}
+
+
+@media screen and (max-width:412px) {
+    
+
+    .emoji{
+
+
+        position: relative;
+top: 22%;
+left: 25%;
+
+    }
+}
+
+/* .buttonContainer > button:hover{
+    background-color: blue;
+    color: black;
+} */
